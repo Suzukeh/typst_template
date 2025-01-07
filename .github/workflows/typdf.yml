@@ -28,7 +28,7 @@ jobs:
       - name: Create page directory
         run: |
           mkdir _pages
-          mv ./main.pdf ./_pages/main.pdf
+          mv ./sample.pdf ./_pages/sample.pdf
           echo "<meta http-equiv=\"refresh\" content=\"0;URL='$(gh api "repos/$GITHUB_REPOSITORY" --jq '.html_url')'\">" > ./_pages/index.html
         env:
           GH_TOKEN: ${{ github.token }}
