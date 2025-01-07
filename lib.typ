@@ -29,10 +29,14 @@
   show: use-ja-ref //bxjaref
 
   //フォント設定
+  // LuaLaTeXの再現
+  //https://ctan.org/pkg/newcomputermodern ←Mathも入れる
+  //https://www.ctan.org/pkg/haranoaji ←全部
   let serif = ("New Computer Modern", "Harano Aji Mincho")
   let sans = "Harano Aji Gothic"
   set text(lang: "ja", font: serif, fontsize)
-
+  show math.equation: set text(font: "New Computer Modern Math") //数式のフォント
+  show raw: set text(font: ("HackGenNerd", "DejaVu Sans Mono")) //コードブロックのフォント
 
   //A4用紙
   set page(
@@ -85,8 +89,6 @@
     }
   }
 
-
-  show math.equation: set text(font: ("New Computer Modern Math", ..serif)) //数式のフォント
 
   let hbar = (sym.wj, text(font: "New Computer Modern Math")[#math.planck.reduce], sym.wj).join()
 
