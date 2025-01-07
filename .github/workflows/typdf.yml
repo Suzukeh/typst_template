@@ -18,8 +18,13 @@ jobs:
         uses: actions/checkout@v3
 
       - uses: typst-community/setup-typst@v3
+      - name: Install fonts
+        run: |
+          sudo apt update
+          sudo apt install fonts-noto
+          fc-cache -vf
       - run: typst fonts
-      - run: typst compile sanple.typ sample.pdf
+      - run: typst compile sample.typ sample.pdf
       - name: Create page directory
         run: |
           mkdir _pages
