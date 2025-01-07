@@ -1,6 +1,9 @@
 # typstテンプレート
 VSCode(tinymist) + typst + Zotero環境で卒論を書くためのテンプレート
 
+サンプル https://suzukeh.github.io/typst_template/sample.pdf
+↑まだActionsでちゃんとフォントを設定できていない
+
 # 導入
 以下をcloneまたはダウンロード
 ```
@@ -39,6 +42,8 @@ typst本体とVSCodeのtynymist拡張機能を導入する。
 
 # その他
 * Table Generatorが便利  https://gitlab.mma.club.uec.ac.jp/gae/typst-for-ekken#typst-table-generator
+* Actionsでコンパイルしてpagesで公開するの、これ参考(ほぼコピペ)にした  
+  https://github.com/SnO2WMaN/typst-report-template/actions/runs/12272935678/workflow
 * https://github.com/typst/hayagriva/issues/263 誰かこれどうにかして(他力本願)
 
 # 参考
