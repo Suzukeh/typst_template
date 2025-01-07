@@ -14,14 +14,13 @@ jobs:
       - name: Typst
         uses: lvignoli/typst-action@main
         with:
-          source_file: |
-            sample.typ
+          source_file: sample.typ
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: *.pdf
+          path: sample.pdf
 
       - name: Get current date
         id: date
