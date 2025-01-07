@@ -11,15 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Serif
-        uses: SnO2WMaN/install-fontsource-action@v0.0.2
-        with:
-          font-name: Noto Serif JP
-      - name: Sans
-        uses: SnO2WMaN/install-fontsource-action@v0.0.2
-        with:
-          font-name: Noto Sans JP
-
       - name: Typst
         uses: lvignoli/typst-action@main
         with:
