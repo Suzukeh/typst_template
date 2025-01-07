@@ -19,11 +19,12 @@ jobs:
         uses: SnO2WMaN/install-fontsource-action@v0.0.2
         with:
           font-name: Noto Sans JP
+
       - name: Typst
         uses: lvignoli/typst-action@main
         with:
           source_file: sample.typ
-
+      - run: typst fonts
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
