@@ -1,0 +1,27 @@
+Someone-TheBest-2000:
+  author:
+    - Someone, A.
+    - Another, O.
+  date: 2000
+  page-range: 100-111
+  parent:
+    issue: 100
+    title: Journal of Articles
+    type: periodical
+    volume: 5
+  title: The Best Article
+  type: article
+誰-すごい-2020:
+  author:
+    - 鈴木, 太郎.
+    - 佐藤, 次郎.
+  date: 2020
+  language: ja
+  page-range: "20"
+  parent:
+    issue: 1
+    title: 応用論文学
+    type: periodical
+    volume: 50
+  title: すごい論文
+  type: article
