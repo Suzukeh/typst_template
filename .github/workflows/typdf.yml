@@ -1,9 +1,12 @@
-name: GitHub Actions Demo
-
-on: [push]
-
+name: Build Typst document
+on: push
 jobs:
-  echo_hello_world:
+  build_typst_documents:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world!!"
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: sample.typ
