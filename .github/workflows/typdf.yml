@@ -20,8 +20,9 @@ jobs:
       - uses: typst-community/setup-typst@v3
       - name: Install fonts
         run: |
-          sudo apt update
-          sudo apt install fonts-noto-cjk
+          curl -Lo ./haranoaji.zip https://mirrors.ctan.org/fonts/haranoaji.zip
+          unzip ./haranoaji.zip -d haranoaji
+          cp haranoaji/*.otf ~/.fonts/
           fc-cache -vf
       - run: typst fonts
       - run: typst compile sample.typ sample.pdf
