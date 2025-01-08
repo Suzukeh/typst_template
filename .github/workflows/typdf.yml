@@ -22,7 +22,8 @@ jobs:
         run: |
           curl -Lo ./haranoaji.zip https://mirrors.ctan.org/fonts/haranoaji.zip
           unzip ./haranoaji.zip
-          cp haranoaji/*.otf ~/.fonts/
+          ls /usr/share/fonts
+          cp haranoaji/*.otf /usr/share/fonts/
           fc-cache -vf
       - run: typst fonts
       - run: typst compile sample.typ sample.pdf
