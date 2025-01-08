@@ -21,7 +21,7 @@ jobs:
       - name: Install fonts
         run: |
           curl -Lo ./haranoaji.zip https://mirrors.ctan.org/fonts/haranoaji.zip
-          unzip ./haranoaji.zip -d haranoaji
+          unzip ./haranoaji.zip
           cp haranoaji/*.otf ~/.fonts/
           fc-cache -vf
       - run: typst fonts
