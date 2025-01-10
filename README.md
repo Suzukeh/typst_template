@@ -9,21 +9,29 @@ VSCode(tinymist) + typst + Zotero環境で卒論を書くためのテンプレ�
 # 導入
 以下をcloneまたはダウンロード。
 ```
-sample.typ サンプル文書
-lib.typ テンプレート
-refs.yml typst用の参考文献書式Hayagrivaで書かれたyml
+sample.typ  サンプル文書
+lib.typ  テンプレート
+refs.yml  typst用の参考文献書式Hayagrivaで書かれたyml
 libs/
-  bxjaref.typ 日本語参照環境
-  noandjp.csl 参考文献で日本語の著者にandがいらない問題の解決
-```
-必要に応じて以下を追加する。
-```
-main.typ サンプル抜きの最小構成(コピペ用)
-refs.bib ZoteroのBetter BibTeXからエクスポートされた想定のbib
-bib2hayaml.py bibからymlの変換(languageの修復機能付き)
+  bxjaref.typ  日本語参照環境
+  noandjp.csl  参考文献で日本語の著者にandがいらない問題の解決
 ```
 
-また、原ノ味フォントのインストールを推奨。<br>
+必要に応じて以下を追加する。
+```
+main.typ  サンプル抜きの最小構成(コピペ用)
+refs.bib  ZoteroのBetter BibTeXからエクスポートされた想定のbib
+bib2hayaml.py  bibからymlの変換(languageの修復機能付き)
+```
+
+bib2hayaml.pyを使用する場合はpipで依存関係をインストールする。
+```
+pip install --no-cache-dir --force-reinstall git+https://github.com/sciunto-org/python-bibtexparser@main
+pip install pyyaml
+```
+
+
+原ノ味フォントのインストールを推奨。<br>
 TeXLive2020以降における標準の日本語フォントなので、LaTeXと同じ雰囲気の文書が作りやすい。<br>
 https://www.ctan.org/pkg/haranoaji <br>
 zipの中にあるotfをすべてインストールする。
@@ -51,8 +59,10 @@ ymlで日本語の文献にだけlanguageフィールドを用意すればCSL側
 
 ので、pythonでちょっといじってlanguageフィールドを復活させた。
 
-(どっかで別記事にするかも)
+~~(どっかで別記事にするかも)~~<br>
+書いた。
 
+https://qiita.com/Suzukeh/items/986793803f8ae0158122
 
 # その他
 * Table Generatorが便利<br>
