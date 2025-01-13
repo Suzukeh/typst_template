@@ -18,7 +18,7 @@
     ]
     #v(2%)
     #text(size: 16pt)[
-      鈴木
+      鈴木太郎
     ]
     #pagebreak()
   ]
@@ -47,4 +47,3 @@ latex (latex) が遅すぎて死にそうなとき、ありますよね。
 #set text(lang: "en") //andが「と」になるのを防ぐ
 #bibliography("refs.yml", title: "参考文献", style: "libs/noandjp.csl")
 
-TODO 番号の位置がなぜかズレているのを修正

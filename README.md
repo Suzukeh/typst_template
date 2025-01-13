@@ -1,5 +1,5 @@
 # typstテンプレート
-VSCode(tinymist) + typst + Zotero環境で卒論を書くためのテンプレート
+Typst + VSCode(tinymist) + Zotero 環境で卒論を書くためのテンプレート
 
 サンプル https://suzukeh.github.io/typst_template/sample.pdf
 

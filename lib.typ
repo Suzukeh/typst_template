@@ -10,14 +10,15 @@
 #import "@preview/unify:0.7.0": * //siunitx 単位のやつ色々あるけど、rangeと不確かさ両対応はこれだけっぽい
 #import "@preview/physica:0.9.3": * //数式記号
 
-#import "libs/bxjaref.typ": * //日本語ref
-
 #import "@preview/whalogen:0.2.0": * //mhchem 化学式
 
 #import "@preview/quick-maths:0.2.0": shorthands //数式スニペット
 
 #import "@preview/showybox:2.0.1": * //枠線
 
+
+#import "libs/bxjaref.typ": * //日本語ref
+#import "libs/temporary.typ" //書類ごとの一時的な設定用 単語とか
 //fake-bibliographyは色々あって不採用
 // CSLでの対応に切り替えた
 //#import "bib.typ": fake-bibliography //日本語vs英語文献のand問題を解決
