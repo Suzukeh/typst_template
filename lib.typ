@@ -100,7 +100,6 @@
   set table.vline(stroke: .5pt)
   show figure.where(kind: table): set figure.caption(position: top)
 
-  set grid(align: horizon)
 
   // 図のキャプション
   set figure(gap: 0.5em)

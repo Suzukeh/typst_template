@@ -3,9 +3,6 @@ VSCode(tinymist) + typst + Zotero環境で卒論を書くためのテンプレ�
 
 サンプル https://suzukeh.github.io/typst_template/sample.pdf
 
-## TODO
-* 参考文献の番号の位置がちょっと変
-
 # 導入
 以下をcloneまたはダウンロード。
 ```
