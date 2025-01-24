@@ -28,6 +28,7 @@
 
 #let project(fontsize: 11pt, body) = {
   show: use-ja-ref //bxjaref
+  show: temporary.with() //temporary読み込み
 
   //フォント設定
   // LuaLaTeXの再現
